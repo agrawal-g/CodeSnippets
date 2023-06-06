@@ -49,9 +49,9 @@ def weighted_quantile(values, quantiles, sample_weight=None,
         weighted_quantiles /= np.sum(sample_weight)
     return np.interp(quantiles, weighted_quantiles, values)
 
-# Example of how we call it later
+# Example of how we call it in our jupyter notebook
 # The Median
-# plmedian = weighted_quantile(a, .5, sample_weight=ploww/sum(ploww))
+# median = weighted_quantile(nparray, .5, sample_weight=weights/sum(weights))
 # The 68%
-# plrange_bottom = weighted_quantile(a, .5-.34, sample_weight=ploww/sum(ploww))
-# plrange_top = weighted_quantile(a, .5+.34, sample_weight=ploww/sum(ploww))
+# range_bottom = weighted_quantile(nparray, .5-.34, sample_weight=weights/sum(weights))
+# range_top = weighted_quantile(nparray, .5+.34, sample_weight=weights/sum(weights))
