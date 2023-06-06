@@ -1,2 +1,2 @@
 # CodeSnippets
-Snippets of code.
+Tidbits of code.
